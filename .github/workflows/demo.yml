@@ -1,2 +1,11 @@
-run-name
-cat secondterraform.tf
+name: "CI"
+
+on:
+  push:
+    branches:
+       - main
+       - test
+  pull_request:
+    branches:
+      - main
+      - test
